@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.dgvPoruke = new System.Windows.Forms.DataGridView();
-            this.lbltekst = new System.Windows.Forms.Label();
-            this.btnNovaPoruka = new System.Windows.Forms.Button();
             this.Predmet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Vrijeme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sadrzaj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Slika = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Brisi = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.lbltekst = new System.Windows.Forms.Label();
+            this.btnNovaPoruka = new System.Windows.Forms.Button();
+            this.btnPrintaj = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPoruke)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,23 +60,6 @@
             this.dgvPoruke.Size = new System.Drawing.Size(817, 301);
             this.dgvPoruke.TabIndex = 0;
             this.dgvPoruke.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPoruke_CellContentClick);
-            // 
-            // lbltekst
-            // 
-            this.lbltekst.Location = new System.Drawing.Point(104, 47);
-            this.lbltekst.Name = "lbltekst";
-            this.lbltekst.Size = new System.Drawing.Size(398, 23);
-            this.lbltekst.TabIndex = 1;
-            // 
-            // btnNovaPoruka
-            // 
-            this.btnNovaPoruka.Location = new System.Drawing.Point(796, 60);
-            this.btnNovaPoruka.Name = "btnNovaPoruka";
-            this.btnNovaPoruka.Size = new System.Drawing.Size(150, 23);
-            this.btnNovaPoruka.TabIndex = 2;
-            this.btnNovaPoruka.Text = "Nova Poruka";
-            this.btnNovaPoruka.UseVisualStyleBackColor = true;
-            this.btnNovaPoruka.Click += new System.EventHandler(this.btnNovaPoruka_Click);
             // 
             // Predmet
             // 
@@ -123,11 +107,39 @@
             this.Brisi.UseColumnTextForButtonValue = true;
             this.Brisi.Width = 125;
             // 
+            // lbltekst
+            // 
+            this.lbltekst.Location = new System.Drawing.Point(104, 47);
+            this.lbltekst.Name = "lbltekst";
+            this.lbltekst.Size = new System.Drawing.Size(398, 23);
+            this.lbltekst.TabIndex = 1;
+            // 
+            // btnNovaPoruka
+            // 
+            this.btnNovaPoruka.Location = new System.Drawing.Point(796, 60);
+            this.btnNovaPoruka.Name = "btnNovaPoruka";
+            this.btnNovaPoruka.Size = new System.Drawing.Size(150, 23);
+            this.btnNovaPoruka.TabIndex = 2;
+            this.btnNovaPoruka.Text = "Nova Poruka";
+            this.btnNovaPoruka.UseVisualStyleBackColor = true;
+            this.btnNovaPoruka.Click += new System.EventHandler(this.btnNovaPoruka_Click);
+            // 
+            // btnPrintaj
+            // 
+            this.btnPrintaj.Location = new System.Drawing.Point(888, 519);
+            this.btnPrintaj.Name = "btnPrintaj";
+            this.btnPrintaj.Size = new System.Drawing.Size(150, 23);
+            this.btnPrintaj.TabIndex = 3;
+            this.btnPrintaj.Text = "Nova Poruka";
+            this.btnPrintaj.UseVisualStyleBackColor = true;
+            this.btnPrintaj.Click += new System.EventHandler(this.btnPrintaj_Click);
+            // 
             // frmPoruke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 564);
+            this.Controls.Add(this.btnPrintaj);
             this.Controls.Add(this.btnNovaPoruka);
             this.Controls.Add(this.lbltekst);
             this.Controls.Add(this.dgvPoruke);
@@ -149,5 +161,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Slika;
         private System.Windows.Forms.DataGridViewButtonColumn Brisi;
         private System.Windows.Forms.Button btnNovaPoruka;
+        private System.Windows.Forms.Button btnPrintaj;
     }
 }

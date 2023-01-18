@@ -22,6 +22,7 @@ namespace DLWMS.WinForms.IB180072
             InitializeComponent();
             _student = student;
         }
+        
 
         private void frmNovaPoruka_Load(object sender, EventArgs e)
         {
@@ -29,7 +30,7 @@ namespace DLWMS.WinForms.IB180072
         }
 
         private void btnSacuvaj_Click(object sender, EventArgs e)
-        {
+        {  
             if (Validator.ValidirajKontrolu(txtSadrzaj, errorProvider1, Poruke.ObaveznaVrijednost)&&
                 Validator.ValidirajKontrolu(cbPredmet,errorProvider1,Poruke.ObaveznaVrijednost))
             {

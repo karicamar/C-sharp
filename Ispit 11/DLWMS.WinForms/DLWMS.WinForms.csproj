@@ -97,6 +97,19 @@
     <Compile Include="Helpers\Validator.cs" />
     <Compile Include="Helpers\Poruke.cs" />
     <Compile Include="DB\Student.cs" />
+    <Compile Include="IB180072\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IB180072\dsIzvjestaj.cs">
+      <DependentUpon>dsIzvjestaj.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IB180072\dsIzvjestaj.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIzvjestaj.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IB180072\frmNovaPoruka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +152,9 @@
     <EmbeddedResource Include="IB180072\frmPretragaIB180072.resx">
       <DependentUpon>frmPretragaIB180072.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IB180072\Izvjestaj.rdlc" />
+    <EmbeddedResource Include="IB180072\Report1.rdlc" />
+    <EmbeddedResource Include="IB180072\rptNesto.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -155,6 +171,28 @@
     <EmbeddedResource Include="Reports\rptPotvrda.rdlc" />
     <None Include="DLWMS.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="IB180072\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IB180072\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IB180072\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IB180072\dsIzvjestaj.xsc">
+      <DependentUpon>dsIzvjestaj.xsd</DependentUpon>
+    </None>
+    <None Include="IB180072\dsIzvjestaj.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIzvjestaj.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IB180072\dsIzvjestaj.xss">
+      <DependentUpon>dsIzvjestaj.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

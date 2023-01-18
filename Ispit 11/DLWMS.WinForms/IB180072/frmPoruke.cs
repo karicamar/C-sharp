@@ -1,4 +1,5 @@
 ﻿using DLWMS.WinForms.DB;
+using DLWMS.WinForms.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,6 +56,14 @@ namespace DLWMS.WinForms.IB180072
                 }
             }
                 Ucitaj();
+        }
+
+        private void btnPrintaj_Click(object sender, EventArgs e)
+        {
+            var formaIzvjestaja = new frmIzvjestaj(_student.Student);
+            Hide();
+            formaIzvjestaja.ShowDialog();
+            Show();
         }
     }
 }
